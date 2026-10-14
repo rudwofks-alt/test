@@ -380,6 +380,31 @@ table.dct td,table.rst td{vertical-align:top}table.dct tr.pkr td{background:var(
 .xo{margin:16px 0 4px;padding:10px 14px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;font-weight:600;font-size:16px;line-height:1.55}
 .xg{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.xb{background:var(--surface-2);border-radius:10px;padding:10px 12px}.xl{font-size:12px;color:var(--ink-3);font-weight:600}.xv{font-size:20px;font-weight:700;font-family:var(--f-mono);margin-top:2px}.xv.r{color:var(--red)}.xv.a{color:var(--amber)}.xv.g{color:var(--green)}.xs{font-size:12px;color:var(--ink-2);margin-top:2px}
 .xv2{margin-top:14px;font-size:14px;line-height:1.7;color:var(--ink-2)}.xv2 strong{color:var(--red)}.xf{margin-top:16px;font-size:11.5px;color:var(--ink-4);border-top:1px solid var(--line-2);padding-top:10px}
+/* 이미지 저장 — 와이드 · 세로 분할 */
+#imgm{position:fixed;z-index:30;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.16);padding:6px;display:flex;flex-direction:column;min-width:220px}
+#imgm button{text-align:left;padding:8px 10px;border-radius:7px;font-size:13px;display:flex;flex-direction:column;gap:1px}#imgm button:hover{background:var(--surface-2)}#imgm .note{font-size:11.5px}
+.xwd{width:1600px;padding:34px 40px 26px;background:var(--surface);color:var(--ink);font-family:var(--f-body);border-radius:18px;border:1px solid var(--line)}
+.xwd .xg{grid-template-columns:repeat(6,1fr)}.xwd .xv{font-size:22px}
+.xcols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px;margin-top:14px;align-items:start}
+.xbox{border:1px solid var(--line-2);border-radius:12px;padding:14px 16px;min-width:0}
+.xbox h4{margin:0 0 8px;font-size:15px;display:flex;gap:8px;align-items:baseline}.xbox h4 small{font-weight:500;color:var(--ink-3);font-size:12px}
+.xfour{display:grid;grid-template-columns:76px minmax(0,1fr);gap:5px 10px;font-size:14px;line-height:1.55;margin:0}.xfour dt{color:var(--ink-3);font-weight:600;font-size:12.5px;padding-top:2px}.xfour dd{margin:0}
+.xrow{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:2px 10px;font-size:13.5px;padding:5px 0;border-top:1px dashed var(--line-2);align-items:baseline}.xrow:first-of-type{border-top:0}
+.xrow .m{font-family:var(--f-mono);font-weight:600}.xrow.cur{background:var(--accent-soft);border-radius:6px;padding-left:6px;padding-right:6px}.xrow .up{color:var(--green)}.xrow .dn{color:var(--red)}
+.xtag{display:inline-block;font-size:12px;font-weight:700;padding:0 8px;border-radius:999px;background:var(--surface-3);color:var(--ink-2);margin:0 4px 4px 0;line-height:1.7}.xtag.main{background:var(--accent-soft);color:var(--accent)}
+.xpg{width:1080px;height:1350px;padding:60px 64px 44px;display:flex;flex-direction:column;background:var(--surface);color:var(--ink);font-family:var(--f-body);overflow:hidden;box-sizing:border-box}
+.xpg .ph{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}.xpg .ph b{font-family:var(--f-mono);font-size:30px;color:var(--accent)}.xpg .ph .xr{font-size:20px}
+.xpg h3{font-size:40px;margin:0 0 20px;line-height:1.25;letter-spacing:-.01em}.xpg .bd{flex:1;min-height:0;overflow:hidden;font-size:27px;line-height:1.55}
+.xpg .big{font-family:var(--f-mono);font-size:110px;font-weight:700;color:var(--accent);line-height:1}.xpg .nm{font-size:34px;font-weight:700;margin-top:10px}.xpg .meta{font-size:24px;color:var(--ink-3);margin-top:6px}
+.xpg .one{margin:28px 0;padding:18px 24px;border-left:6px solid var(--accent);background:var(--accent-soft);border-radius:0 14px 14px 0;font-weight:600;font-size:30px;line-height:1.5}
+.xpg .k4{display:grid;grid-template-columns:1fr 1fr;gap:16px}.xpg .kb{background:var(--surface-2);border-radius:16px;padding:18px 22px}.xpg .kb .l{font-size:21px;color:var(--ink-3);font-weight:600}.xpg .kb .v{font-size:38px;font-weight:700;font-family:var(--f-mono);margin-top:4px}.xpg .kb .s{font-size:20px;color:var(--ink-2);margin-top:2px}
+.xpg .kb .v.r{color:var(--red)}.xpg .kb .v.g{color:var(--green)}.xpg .kb .v.a{color:var(--amber)}
+.xpg .xfour{grid-template-columns:150px minmax(0,1fr);gap:12px 18px;font-size:27px}.xpg .xfour dt{font-size:23px;padding-top:4px}
+.xpg .xrow{font-size:26px;padding:10px 0;gap:4px 18px}.xpg .xtag{font-size:22px;padding:2px 14px}
+.xpg .pf{display:flex;justify-content:space-between;font-size:19px;color:var(--ink-4);border-top:1px solid var(--line-2);padding-top:14px;margin-top:18px}
+.xpg .sec2{margin-top:26px}.xpg .sec2 h4{font-size:28px;margin:0 0 10px}
+.xpg .pc2{border:2px solid var(--line-2);border-radius:16px;padding:20px 24px;margin-bottom:18px}.xpg .pc2.main{border-color:var(--accent-line);background:var(--accent-soft)}
+.xpg .pc2 .hd{display:flex;justify-content:space-between;align-items:baseline;font-size:30px;font-weight:700;margin-bottom:10px}.xpg .pc2 .hd span{font-family:var(--f-mono);font-size:30px}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 
 .ss-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}
@@ -1398,7 +1423,7 @@ function vTicker0(tk){const t=T(tk);if(!S.analysis[tk])return `<button class="ba
   const evs=(t.events||[]).map(e=>{let dd='(추정)',past=false;if(/^\d{4}-\d{2}-\d{2}$/.test(e.when)){const k=dayDiff(e.when);past=k<0;dd=k<0?'지남':k===0?'오늘':'D-'+k;}return `<div class="li ${past?'past':''}"><span class="d">${esc(e.when)}</span><span class="note">${dd}</span><span class="w">${esc(e.what)}${e.note?`<span class="s">${esc(e.note)}</span>`:''}${e.outlook?`<span class="s">실적 전망: ${esc(e.outlook.call)} — ${esc(e.outlook.why)}</span>`:''}</span></div>`;}).join('');
   return `<section class="sec" id="tk-top"><div class="tkh"><div class="tt"><div class="row"><span class="pill p-n">${esc(t.exchange||'')}</span><span class="pill p-n">분석 당시 시총 ${esc(t.mcap||'')}</span>${badges(t)}${(t.reaction||[]).map(r=>`<span class="pill p-n">${esc(r)}</span>`).join('')}</div>
    <h2><span class="mono">${esc(tk)}</span> · ${esc(t.name||'')}</h2><div class="sub">${esc(t.about||'')}</div><p class="one">${esc(t.oneLiner||'')}</p></div>
-   <div class="side"><button class="own starb ${n.star?'on':''}" data-star="${esc(tk)}">${n.star?'★ 관심 종목':'☆ 관심 추가'}</button><div class="acts">${tossA(tk,'act toss')}<a class="act" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${encodeURIComponent(tk)}&type=&dateb=&owner=include&count=40" target="_blank" rel="noopener" title="EDGAR 공시 목록">EDGAR</a><button class="act" data-rep="${esc(tk)}" title="13섹션 포렌식 리포트 원문 · 섹션 목차">리포트${(t.reports||[]).length?' '+(t.reports||[]).length:''}</button><button class="act" data-discopen="${esc(tk)}" title="옆 창에서 토론 보기·쓰기">토론 ${discN(tk)||''}</button><button class="act own" data-rsre="${esc(tk)}" title="조사 대기에 넣고 포렌식 재분석 실행">재분석 요청</button><button class="act own" data-copy="sum|${esc(tk)}" title="핵심만 정리해 복사">요약 복사</button><button class="act own" data-copy="full|${esc(tk)}" title="고정 분석 전체를 텍스트로 복사">텍스트 복사</button><button class="act own" data-img="${esc(tk)}" title="요약 카드를 PNG로 저장">이미지 저장</button></div>${(()=>{const rk=w50Rank(tk);const w=w50Of(tk);const ork=w50OldRank(tk);return rk?`<span class="pill p-r" title="${esc(w.why.join(' · '))}">부양 임박 ${rk}위 · ${w.s}점${ork?` (이전 ${ork}위)`:''}</span>`:ork?`<span class="pill p-v" title="이전 워치리스트 부양 임박 목록 · v2 점수 ${w.s}점">부양 임박 이전 ${ork}위</span>`:'';})()}<span class="note">등록 ${esc(md5(t.registeredAt||String(t._createdAt||'').slice(0,10)))} · 분석 ${esc(md5(t.analyzedAt||''))} · 포렌식 ${t.promptVersion?'v'+esc(vN(t.promptVersion)):'미기록'}</span></div></div></section>
+   <div class="side"><button class="own starb ${n.star?'on':''}" data-star="${esc(tk)}">${n.star?'★ 관심 종목':'☆ 관심 추가'}</button><div class="acts">${tossA(tk,'act toss')}<a class="act" href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${encodeURIComponent(tk)}&type=&dateb=&owner=include&count=40" target="_blank" rel="noopener" title="EDGAR 공시 목록">EDGAR</a><button class="act" data-rep="${esc(tk)}" title="13섹션 포렌식 리포트 원문 · 섹션 목차">리포트${(t.reports||[]).length?' '+(t.reports||[]).length:''}</button><button class="act" data-discopen="${esc(tk)}" title="옆 창에서 토론 보기·쓰기">토론 ${discN(tk)||''}</button><button class="act own" data-rsre="${esc(tk)}" title="조사 대기에 넣고 포렌식 재분석 실행">재분석 요청</button><button class="act own" data-copy="sum|${esc(tk)}" title="핵심만 정리해 복사">요약 복사</button><button class="act own" data-copy="full|${esc(tk)}" title="고정 분석 전체를 텍스트로 복사">텍스트 복사</button><button class="act own" data-img="${esc(tk)}" title="와이드 1장 또는 세로 분할(장별·ZIP)로 PNG 저장">이미지 저장 ▾</button></div>${(()=>{const rk=w50Rank(tk);const w=w50Of(tk);const ork=w50OldRank(tk);return rk?`<span class="pill p-r" title="${esc(w.why.join(' · '))}">부양 임박 ${rk}위 · ${w.s}점${ork?` (이전 ${ork}위)`:''}</span>`:ork?`<span class="pill p-v" title="이전 워치리스트 부양 임박 목록 · v2 점수 ${w.s}점">부양 임박 이전 ${ork}위</span>`:'';})()}<span class="note">등록 ${esc(md5(t.registeredAt||String(t._createdAt||'').slice(0,10)))} · 분석 ${esc(md5(t.analyzedAt||''))} · 포렌식 ${t.promptVersion?'v'+esc(vN(t.promptVersion)):'미기록'}</span></div></div></section>
   ${playCard(tk)}
   ${intentSec(tk)}
   <div class="mx">
@@ -1615,15 +1640,64 @@ function cardHTML(tk){const t=T(tk),st=strengthOf(t),en=entryOf(t),nd=nextDeadli
   ${t.verdict?`<div class="xv2">${md(String(t.verdict))}</div>`:''}
   <div class="xf">rabbitstock.com · 공시 기반 유인 분석 · 투자 권유 아님 · ${esc(new Date().toISOString().slice(0,10))}</div></div>`;}
 let H2C=null;function loadH2C(){if(window.html2canvas)return Promise.resolve();if(H2C)return H2C;H2C=new Promise((res,rej)=>{const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';s.onload=res;s.onerror=()=>{H2C=null;rej(new Error('load'));};document.head.appendChild(s);});return H2C;}
-async function saveImage(tk,btn){const o=btn.textContent;btn.disabled=true;btn.textContent='만드는 중…';let host;
-  try{await loadH2C();host=document.createElement('div');host.className='xhost';host.innerHTML=cardHTML(tk);document.body.appendChild(host);
-   const bg=getComputedStyle(document.body).backgroundColor;const cv=await window.html2canvas(host.firstElementChild,{scale:2,backgroundColor:bg,useCORS:true,logging:false});
-   const blob=await new Promise(r=>cv.toBlob(r,'image/png'));const name=`${tk}_rabbitstock_${TODAY}.png`;
-   const dl=await window.claude.use('downloads').catch(()=>null);
-   if(dl){try{await dl.save({filename:name,data:blob});toast('이미지를 저장했습니다');}catch(e){toast(e&&e.code==='declined'?'저장을 취소했습니다':'저장 실패 ('+(e&&e.code||'오류')+')');}}
-   else{const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();toast('이미지를 내려받았습니다');}}
+const xt=(v,n)=>{v=String(v??'');return v.length>n?v.slice(0,n-1)+'…':v;};
+function xCss(k){return getComputedStyle(document.documentElement).getPropertyValue(k).trim()||'#1E4E88';}
+function xChart(t,W,H){const h=(t.hist||[]).filter(x=>+x.c>0);if(h.length<3)return '';const c=h.map(x=>+x.c),mn=Math.min(...c),mx=Math.max(...c),p=6;
+  const X=i=>p+i*(W-2*p)/(c.length-1),Y=v=>p+(mx===mn?.5:(mx-v)/(mx-mn))*(H-2*p);const pts=c.map((v,i)=>X(i).toFixed(1)+','+Y(v).toFixed(1)).join(' ');
+  const ac=xCss('--accent');return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg"><polygon points="${p},${H-p} ${pts} ${W-p},${H-p}" fill="${ac}" fill-opacity="0.12"/><polyline points="${pts}" fill="none" stroke="${ac}" stroke-width="3" stroke-linejoin="round"/><circle cx="${X(c.length-1).toFixed(1)}" cy="${Y(c[c.length-1]).toFixed(1)}" r="5" fill="${ac}"/></svg>`;}
+function xData(tk){const t=T(tk),st=strengthOf(t),en=entryOf(t),a=anaOf(t),nd=nextDeadline(tk),m=mainOf2(t)||{},R=t.runway||{},b=dumpBand(t),c=+t.price;
+  const others=(t.purposes||[]).filter(p=>p!==m&&!p.resolved);
+  const lad=(()=>{const L=ladderOf(t);const i=L.findIndex(x=>x.k==='cur');if(i<0)return L.slice(0,9);const s0=Math.max(0,Math.min(i-4,L.length-9));return L.slice(s0,s0+9);})();
+  const evs=(()=>{const d=deadlines(tk);const L=d.out.filter(x=>x.date>=TODAY).sort(byD).map(x=>({d:x.month||x.qMonths?x.label:x.date,w:x.what,est:x.est}));d.earn.filter(x=>x.date>=TODAY).forEach(x=>L.push({d:x.label,w:'실적 발표',est:x.est}));return L.slice(0,5);})();
+  const dil=(t.dilution||[]).filter(x=>+x.qtyM>0).sort((x,y)=>(+y.qtyM)-(+x.qtyM)).slice(0,4);const hol=(t.holders||[]).slice(0,3);
+  return {t,st,en,a,nd,m,R,b,c,others,lad,evs,dil,hol};}
+const xPc=(p,c)=>+p.targetPrice>0?`${usd(p.targetPrice)}${c>0?' ('+pct((p.targetPrice/c-1)*100)+')':''}`:'';
+const xAtm=t=>`ATM ${t.atm===true?'열림':t.atm==='대기'?'대기':'없음'} · ELOC ${t.eloc===true?'열림':t.eloc==='대기'?'대기':'없음'}`;
+function cardWide(tk){const D_=xData(tk),{t,st,en,a,nd,m,R,b,c}=D_;
+  const box=(l,v,sub,cl)=>`<div class="xb"><div class="xl">${l}</div><div class="xv ${cl||''}">${v}</div>${sub?`<div class="xs">${sub}</div>`:''}</div>`;
+  const four=m.code?`<dl class="xfour"><dt>얼마까지</dt><dd>${esc(xt(m.upto,90))}</dd><dt>언제까지</dt><dd>${esc(xt([m.until,m.untilNote].filter(Boolean).join(' '),70))}</dd><dt>어떻게</dt><dd>${esc(xt(m.how,190))}</dd><dt>그다음</dt><dd>${esc(xt(m.then,150))}</dd></dl>`:'<div class="note">목적 기록 없음</div>';
+  return `<div class="xwd"><div class="xh"><div><div class="xt"><span>${esc(tk)}</span> ${esc(String(t.name||'').replace(/\s*\(.*\)$/,''))}</div><div class="xm">${esc(t.exchange||'')} · 종가 ${c>0?usd(c):'—'}${t.priceDate?' ('+md5(t.priceDate)+')':''} · 시총 ${esc(t.mcap||'—')} · 분석일 ${esc(t.analyzedAt||'')}</div></div><div class="xr">Rabbitstock</div></div>
+  ${t.oneLiner?`<div class="xo">${esc(t.oneLiner)}</div>`:''}
+  <div class="xg">${box('부양 유인 강도',st.s+' / 5',esc(xt(st.why[0]||'',34)),st.s>=5?'r':st.s>=4?'a':'')}${box('구조 · 분석',`${esc(en.grade)} · ${esc(a.grade||en.grade)}`)}${box('주 목적',esc(m.code||'—'),esc(xPc(m,c)))}${box('가까운 마감',nd?esc(nd.month||nd.qMonths?nd.label:md5(nd.date))+(nd.est?' 추정':''):'—',nd?esc(xt(nd.what,34)):'')}${box('덤프 대역',b?`${usd(b.lo)}~${usd(b.hi)}`:'—',b?'첫 목표 '+usd(b.target):'','r')}${box('런웨이',R.months!=null?R.months+'개월':'—',esc(xAtm(t)))}</div>
+  <div class="xcols"><div class="xbox"><h4>펌핑 목적 <small>얼마까지 · 언제까지 · 어떻게 · 그다음</small></h4><div style="margin-bottom:8px">${(t.purposes||[]).filter(p=>!p.resolved).map(p=>`<span class="xtag ${p===m?'main':''}">${esc(p.code)}${+p.targetPrice>0?' '+usd(p.targetPrice):''}</span>`).join('')}</div>${four}</div>
+   <div class="xbox"><h4>가격 사다리 <small>현재가 기준</small></h4>${xChart(t,440,90)}${D_.lad.map(x=>`<div class="xrow ${x.k==='cur'?'cur':''}"><span class="m">${usd(x.p)}</span><span>${esc(xt(x.w,40))}</span><span class="m ${x.d>0?'up':x.d<0?'dn':''}">${x.k==='cur'||x.d==null?'':pct(x.d)}</span></div>`).join('')}</div>
+   <div class="xbox"><h4>일정 <small>가까운 순</small></h4>${D_.evs.map(e=>`<div class="xrow"><span class="m">${esc(md5(e.d)||e.d)}</span><span>${esc(xt(e.w,46))}${e.est?' (추정)':''}</span><span></span></div>`).join('')||'<div class="note">예정 없음</div>'}
+    <h4 style="margin-top:12px">희석 물량</h4>${D_.dil.map(x=>`<div class="xrow"><span class="m">${x.qtyM}M</span><span>${esc(xt((x.kind||'')+' · '+(x.holder||''),38))}</span><span class="m">${+x.price>0?usd(x.price):''}</span></div>`).join('')||'<div class="note">기록 없음</div>'}</div></div>
+  ${t.verdict?`<div class="xv2">${md(xt(t.verdict,520))}</div>`:''}
+  <div class="xf">rabbitstock.com · SEC 공시 기반 유인 분석 · 확인된 사실 / 공시 기반 추론 / 추정 구분은 원문 리포트 참조 · 투자 권유 아님 · ${esc(TODAY)}</div></div>`;}
+function cardPages(tk){const D_=xData(tk),{t,st,en,a,nd,m,R,b,c}=D_;const name=esc(String(t.name||'').replace(/\s*\(.*\)$/,''));
+  const kb=(l,v,s,cl)=>`<div class="kb"><div class="l">${l}</div><div class="v ${cl||''}">${v}</div>${s?`<div class="s">${s}</div>`:''}</div>`;
+  const P=[];
+  P.push(`<div class="big">${esc(tk)}</div><div class="nm">${name}</div><div class="meta">${esc(t.exchange||'')} · 종가 ${c>0?usd(c):'—'}${t.priceDate?' ('+md5(t.priceDate)+')':''} · 시총 ${esc(t.mcap||'—')}</div>
+   ${t.oneLiner?`<div class="one">${esc(xt(t.oneLiner,120))}</div>`:''}
+   <div class="k4">${kb('부양 유인 강도',st.s+' / 5','',st.s>=5?'r':st.s>=4?'a':'')}${kb('주 목적',esc(m.code||'—'),esc(xPc(m,c)))}${kb('가까운 마감',nd?esc(nd.month||nd.qMonths?nd.label:md5(nd.date)):'—',nd?esc(xt(nd.what,28)):'')}${kb('덤프 대역',b?`${usd(b.lo)}~${usd(b.hi)}`:'—',b?'첫 목표 '+usd(b.target):'','r')}</div>
+   <div style="margin-top:26px">${xChart(t,952,190)}</div><div class="meta">최근 ${(t.hist||[]).length}거래일 종가 · ${esc(xAtm(t))} · 런웨이 ${R.months!=null?R.months+'개월':'—'}</div>`);
+  const pcs=(t.purposes||[]).filter(p=>!p.resolved).sort((x,y)=>(y===m)-(x===m)).slice(0,3);
+  P.push(`<h3>펌핑 목적 — 왜 띄우나</h3>${pcs.map(p=>`<div class="pc2 ${p===m?'main':''}"><div class="hd">${esc(p.code)}${p===m?' · 주 목적':''}<span>${esc(xPc(p,c))}</span></div>${p===m?`<dl class="xfour"><dt>얼마까지</dt><dd>${esc(xt(p.upto,70))}</dd><dt>언제까지</dt><dd>${esc(xt([p.until,p.untilNote].filter(Boolean).join(' '),50))}</dd><dt>어떻게</dt><dd>${esc(xt(p.how,150))}</dd><dt>그다음</dt><dd>${esc(xt(p.then,110))}</dd></dl>`:`<div style="font-size:25px">${esc(xt([p.until,p.untilNote].filter(Boolean).join(' '),40))} — ${esc(xt(p.how,110))}</div>`}</div>`).join('')||'<div class="note">목적 기록 없음</div>'}`);
+  P.push(`<h3>가격 · 물량 — 누가 어디서 던지나</h3><div>${D_.lad.map(x=>`<div class="xrow ${x.k==='cur'?'cur':''}"><span class="m">${usd(x.p)}</span><span>${esc(xt(x.w,34))}</span><span class="m ${x.d>0?'up':x.d<0?'dn':''}">${x.k==='cur'||x.d==null?'':pct(x.d)}</span></div>`).join('')}</div>
+   <div class="sec2"><h4>희석 물량</h4>${D_.dil.map(x=>`<div class="xrow"><span class="m">${x.qtyM}M</span><span>${esc(xt((x.kind||'')+' · '+(x.holder||''),30))}</span><span class="m">${+x.price>0?usd(x.price):x.status||''}</span></div>`).join('')||'<div class="meta">기록 없음</div>'}</div>
+   ${D_.hol.length?`<div class="sec2"><h4>보유자</h4>${D_.hol.map(h=>`<div class="xrow"><span class="m">${h.stake!==''&&h.stake!=null?esc(h.stake)+'%':'—'}</span><span>${esc(xt(h.name,24))} · ${esc(xt(h.behavior,26))}</span><span></span></div>`).join('')}</div>`:''}`);
+  P.push(`<h3>일정 · 판단</h3><div>${D_.evs.map(e=>`<div class="xrow"><span class="m">${esc(md5(e.d)||e.d)}</span><span>${esc(xt(e.w,40))}${e.est?' (추정)':''}</span><span></span></div>`).join('')||'<div class="meta">예정 일정 없음</div>'}</div>
+   ${(t.checks||[]).length?`<div class="sec2"><h4>확인 필요</h4>${t.checks.slice(0,3).map(x=>`<div style="font-size:24px;margin:4px 0">· ${esc(xt(x,70))}</div>`).join('')}</div>`:''}
+   ${t.verdict?`<div class="sec2"><h4>종합 판단</h4><div class="xv2" style="font-size:26px;margin:0">${md(xt(t.verdict,330))}</div></div>`:''}`);
+  const n=P.length;return P.map((body,i)=>`<div class="xpg"><div class="ph"><b>${esc(tk)}</b><span class="xr">Rabbitstock</span></div><div class="bd">${body}</div><div class="pf"><span>${esc(tk)} · ${i+1} / ${n} · 분석일 ${esc(t.analyzedAt||'')}</span><span>rabbitstock.com · 투자 권유 아님</span></div></div>`);}
+let H2Z=null;function loadZip(){if(window.JSZip)return Promise.resolve();if(H2Z)return H2Z;H2Z=new Promise((res,rej)=>{const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';s.onload=res;s.onerror=()=>{H2Z=null;rej(new Error('load'));};document.head.appendChild(s);});return H2Z;}
+async function xShot(html){await loadH2C();const host=document.createElement('div');host.className='xhost';host.innerHTML=html;document.body.appendChild(host);
+  try{if(document.fonts&&document.fonts.ready)await document.fonts.ready;const bg=getComputedStyle(document.body).backgroundColor;const cv=await window.html2canvas(host.firstElementChild,{scale:2,backgroundColor:bg,useCORS:true,logging:false});return await new Promise(r=>cv.toBlob(r,'image/png'));}finally{host.remove();}}
+async function xSave(name,blob){const dl=await window.claude.use('downloads').catch(()=>null);
+  if(dl){try{await dl.save({filename:name,data:blob});return 'saved';}catch(e){return e&&e.code||'error';}}
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();return 'saved';}
+async function saveImage(tk,btn,mode){mode=mode||'wide';const o=btn?btn.textContent:'';if(btn){btn.disabled=true;btn.textContent='만드는 중…';}
+  try{if(mode==='wide'){const r=await xSave(`${tk}_rabbitstock_wide_${TODAY}.png`,await xShot(cardWide(tk)));toast(r==='saved'?'와이드 이미지를 저장했습니다':r==='declined'?'저장을 취소했습니다':'저장 실패 ('+r+')');}
+   else{const pages=cardPages(tk);const blobs=[];for(const h of pages)blobs.push(await xShot(h));
+    if(mode==='zip'){await loadZip();const z=new window.JSZip();blobs.forEach((bl,i)=>z.file(`${tk}_rabbitstock_${i+1}of${blobs.length}_${TODAY}.png`,bl));const r=await xSave(`${tk}_rabbitstock_vertical_${TODAY}.zip`,await z.generateAsync({type:'blob'}));toast(r==='saved'?`세로 ${blobs.length}장을 ZIP으로 저장했습니다`:r==='declined'?'저장을 취소했습니다':'저장 실패 ('+r+')');}
+    else{let ok=0;for(let i=0;i<blobs.length;i++){if(btn)btn.textContent=`저장 ${i+1}/${blobs.length}…`;let r=await xSave(`${tk}_rabbitstock_${i+1}of${blobs.length}_${TODAY}.png`,blobs[i]);if(r==='rate_limited'){await new Promise(z=>setTimeout(z,1500));r=await xSave(`${tk}_rabbitstock_${i+1}of${blobs.length}_${TODAY}.png`,blobs[i]);}if(r!=='saved'){toast(`${ok}장 저장 후 중단 — ${r==='declined'?'저장을 취소했습니다':r}`);return;}ok++;}toast(`세로 ${ok}장을 저장했습니다`);}}}
   catch(e){toast('이미지를 만들지 못했습니다 — '+(e&&e.message||'오류'));}
-  finally{if(host)host.remove();btn.disabled=false;btn.textContent=o;}}
+  finally{if(btn){btn.disabled=false;btn.textContent=o;}}}
+function imgMenu(tk,b){let m=document.getElementById('imgm');if(m){const same=m.dataset.tk===tk;m.remove();if(same)return;}m=document.createElement('div');m.id='imgm';m.dataset.tk=tk;
+  m.innerHTML=`<button data-imgw="${esc(tk)}"><b>와이드</b><span class="note">가로 1장 · 목적·사다리·일정 한눈에</span></button><button data-imgv="${esc(tk)}"><b>세로 분할 — 장별</b><span class="note">1080×1350 4장 · 한 장씩 저장</span></button><button data-imgz="${esc(tk)}"><b>세로 분할 — ZIP</b><span class="note">4장을 한 파일로</span></button>`;
+  document.body.appendChild(m);const r=b.getBoundingClientRect();const W=m.offsetWidth;m.style.top=Math.min(window.innerHeight-m.offsetHeight-8,r.bottom+6)+'px';m.style.left=Math.max(8,Math.min(window.innerWidth-W-8,r.right-W))+'px';}
+document.addEventListener('click',e=>{const m=document.getElementById('imgm');if(m&&!e.target.closest('#imgm')&&!e.target.closest('[data-img]'))m.remove();},true);
 /* ===== 렌더 ===== */
 function counts(){const r=(()=>{const k=win;win='d';const x=rankRows().rows.length;win=k;return x;})();return {rank:r,list:Object.keys(S.analysis).filter(t=>!isBlack(t)).length,admin:OWNER?Object.values(S.research).filter(x=>/대기|요청|분석 중|실패/.test(x.status||'대기')).length+Object.keys(autoQ()).length:0,disc:((discEds('d')[0]||{}).items||[]).length,memo:allMemos().length};}
 function subnav(ready){const J=(id,l)=>`<button data-jump="${id}">${l}</button>`,S_=(a,l,cur,attr)=>`<button data-${attr||'sub'}="${a}" class="${cur===a?'on':''}">${l}</button>`,sep='<span class="sep"></span>',hint=t=>`<span class="hint">${t}</span>`;
@@ -1663,7 +1737,7 @@ const HIST={s:[],i:-1};function snapH(){return JSON.stringify({menu,sub,win,sel}
 function pushH(){const k=snapH();if(HIST.s[HIST.i]!==k){HIST.s=HIST.s.slice(0,HIST.i+1);HIST.s.push(k);if(HIST.s.length>60)HIST.s.shift();HIST.i=HIST.s.length-1;}const hb=document.getElementById('hb'),hf=document.getElementById('hf');if(hb)hb.disabled=HIST.i<=0;if(hf)hf.disabled=HIST.i>=HIST.s.length-1;}
 function applyH(k){const o=JSON.parse(k);menu=o.menu;sub=o.sub||sub;win=o.win||win;sel=o.sel||null;render();window.scrollTo(0,0);}
 function go(tk){sel=tk;document.getElementById('sugg').hidden=true;render();window.scrollTo(0,0);}
-const WRITE_KEYS=['cprun','repsave','copy','img','ntpin','ntdel','trreload','verbulk','star','lst','lstdel','nwfire','nwdel','savememo','rsgo','rsre','rsdel','rsdis','rsadd1','rsaddgo','rsbulk','dcfire'];
+const WRITE_KEYS=['imgw','imgv','imgz','cprun','repsave','copy','img','ntpin','ntdel','trreload','verbulk','star','lst','lstdel','nwfire','nwdel','savememo','rsgo','rsre','rsdel','rsdis','rsadd1','rsaddgo','rsbulk','dcfire'];
 document.addEventListener('click',async e=>{const b=e.target.closest('button,.bs-bg');if(!b)return;const ds=b.dataset;
   if(!OWNER&&WRITE_KEYS.some(k=>ds[k]!=null)){toast('소유자만 쓸 수 있는 기능입니다');return;}
   if(ds.rsgo&&DB){b.disabled=true;b.textContent='요청 중…';const r=S.research[ds.rsgo]||autoQ()[ds.rsgo]||{};await rqAn([{tk:ds.rsgo,src:r.src,kind:r.kind,note:r.note}]);b.textContent='요청됨';return;}
@@ -1723,7 +1797,8 @@ document.addEventListener('click',async e=>{const b=e.target.closest('button,.bs
   if(ds.more){if(ds.more==='list')LIMIT+=24;else if(ds.more==='listall')LIMIT=1e4;else if(ds.more==='track')TLIM+=20;else if(ds.more==='trackall')TLIM=1e4;render();return;}
   if(ds.foldall){const open=ds.foldall==='open';document.querySelectorAll('#main .sec[id]').forEach(s=>{if(s.querySelector('h2.fh')){FOLD[s.id]=!open;s.classList.toggle('folded',!open);}});saveUi();return;}
   if(ds.copy){const tk=ds.copy.split('|')[1],mode=ds.copy.split('|')[0];const txt=mode==='sum'?sumText(tk):fullText(tk);const ok=await copyText(txt);toast(ok?(mode==='sum'?'요약을 복사했습니다':'전체 텍스트를 복사했습니다'):'복사가 막혀 있어 창에 띄웠습니다 — 직접 선택해 복사하세요',ok?null:txt);return;}
-  if(ds.img){await saveImage(ds.img,b);return;}
+  if(ds.img){imgMenu(ds.img,b);return;}
+  if(ds.imgw||ds.imgv||ds.imgz){const tk=ds.imgw||ds.imgv||ds.imgz,mode=ds.imgw?'wide':ds.imgv?'each':'zip';const m=document.getElementById('imgm');if(m)m.remove();const ib=document.querySelector(`[data-img="${CSS.escape(tk)}"]`);await saveImage(tk,ib,mode);return;}
   if(ds.home){menu='home';sel=null;flt.q='';const q=document.getElementById('q');if(q)q.value='';{const x=document.getElementById('qx');if(x)x.hidden=true;}saveUi();render();window.scrollTo(0,0);return;}
   if(ds.hback){if(HIST.i>0){HIST.i--;applyH(HIST.s[HIST.i]);}return;}
   if(ds.hfwd){if(HIST.i<HIST.s.length-1){HIST.i++;applyH(HIST.s[HIST.i]);}return;}
